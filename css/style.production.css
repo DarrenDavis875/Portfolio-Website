@@ -1,3 +1,13 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
+:root {
+          
+  --primary-color: #6835c7;
+  --secondary-color: #e0b354;
+  --dark-grey: #2b2b2b;
+  --bkground-color: #41a899;
+}
+
 body {background-color:#add8e6;} 
 body {font-family: lato, sans-serif;
      font-weight: 400;
@@ -24,8 +34,11 @@ body {font-family: lato, sans-serif;
           font-weight: 700;
         }
         a {
-          color: #6835c7;
+          color: var(--primary-color);
         }   
+       
+        
+
      
      a:visited {
           /* visited link */
@@ -47,43 +60,27 @@ body {font-family: lato, sans-serif;
                background-color: #a3e054;
                color: #000303;
              }
-              
-    
-
-
-
-             .button {
-              /* overwrites browser defaults */
-              /* resets the border */
-              border: none;
-              /* takes the font from the outer container */
-              font-family: inherit;
-              /* style button */
-              background-color: #41a899;
-              color: white;
-              text-decoration: none;
-              display: inline-block;
+             .cv_button {
+              max-width: 150px;
+              margin: 0 auto;
+              background-color: var(--secondary-color);
               padding: 10px;
-              border-radius: 3px;
-              /* width of the border, type, color */
-              border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-              -webkit-transition: 0.7s opacity;
-              -o-transition: 0.7s opacity;
-              transition: 0.7s opacity;
+              border-radius: 5px;
+              margin-bottom: 50px;
             }
               
     
 
 
 
-             button {
+             .button, button {
               /* overwrites browser defaults */
               /* resets the border */
               border: none;
               /* takes the font from the outer container */
               font-family: inherit;
               /* style button */
-              background-color: #41a899;
+              background-color: var(--bkground-color);
               color: white;
               text-decoration: none;
               display: inline-block;
@@ -92,9 +89,9 @@ body {font-family: lato, sans-serif;
               /* width of the border, type, color */
               border-bottom: 2px solid rgba(0, 0, 0, 0.3);
               -webkit-transition: 0.7s opacity;
-              -o-transition: 0.7s opacity;
               transition: 0.7s opacity;
             }       
+
 
 .darren__profile {float: left;
 width: 250px;
@@ -184,6 +181,7 @@ border-radius: 50%;
 }
 
 
+
      
 
      .grid {
@@ -271,3 +269,6 @@ border-radius: 50%;
           font-size: 22px;
         }
       }
+      
+      
+    
